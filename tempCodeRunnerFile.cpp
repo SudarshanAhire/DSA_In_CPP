@@ -1,0 +1,3 @@
+
+    cout << str << endl;
+    
