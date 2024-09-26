@@ -16,7 +16,7 @@ bool checkPalindrome(string str, int i, int j){
 
 int main(){
 
-    string str = "aaaa";
+    string str = "sudarshan";
 
     bool isPalindrome = checkPalindrome(str, 0, str.length()-1);
 
