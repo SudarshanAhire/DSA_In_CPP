@@ -15,7 +15,7 @@ int partition(int arr[], int s, int e){
     int pivotIndex = s +  cnt;
     swap(arr[pivotIndex], arr[s]);
 
-    int  i= s, j = s;
+    int  i = s, j = e;
 
     while(i < pivotIndex && j > pivotIndex){
 
@@ -51,8 +51,8 @@ void quickSort(int arr[], int s, int e){
 
 int main(){
 
-    int arr[5] = {7,5,9,4,2};
-    int n = 5;
+    int arr[12] = {74,3,6,8,3,79,8,45,5,9,4,2};
+    int n = 12;
 
     quickSort(arr, 0, n-1);
 
