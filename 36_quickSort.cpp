@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int parition(int arr[], int s, int e){
+int partition(int arr[], int s, int e){
 
     int pivot = arr[s];
 
@@ -35,7 +35,7 @@ int parition(int arr[], int s, int e){
 
 void quickSort(int arr[], int s, int e){
 
-    if(s <= e){
+    if(s >= e){
         return ;
     }
 
