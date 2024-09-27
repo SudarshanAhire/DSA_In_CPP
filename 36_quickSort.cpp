@@ -1,6 +1,23 @@
 #include<iostream>
 using namespace std;
 
+int parition(int arr[], int s, int e){
+
+    int pivot = arr[s];
+
+    int cnt = 0;
+    for(int i = s+1; i<=e; i++){
+        if(arr[i] <= pivot){
+            cnt++;
+        }
+    }
+
+    int pivotIndex = s +  cnt;
+    swap(arr[pivotIndex], arr[s]);
+
+    
+}
+
 void quickSort(int arr[], int s, int e){
 
     if(s <= e){
@@ -12,7 +29,7 @@ void quickSort(int arr[], int s, int e){
     quickSort(arr, s, p-1);
 
     quickSort(arr, p+1, e);
-    
+
 }
 
 int main(){
