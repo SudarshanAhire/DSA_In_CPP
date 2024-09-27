@@ -15,7 +15,22 @@ int parition(int arr[], int s, int e){
     int pivotIndex = s +  cnt;
     swap(arr[pivotIndex], arr[s]);
 
-    
+    int  i= s, j = s;
+
+    while(i < pivotIndex && j > pivotIndex){
+
+        while(arr[i] <= pivot){
+            i++;
+        }
+
+        while(arr[j] > pivot){
+            j--;
+        }
+
+        if(i < pivotIndex && j > pivotIndex){
+            swap(arr[i++], arr[j--]);
+        }
+    }
 }
 
 void quickSort(int arr[], int s, int e){
