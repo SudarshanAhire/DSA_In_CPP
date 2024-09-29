@@ -2,15 +2,22 @@
 using namespace std;
 
 class Hero{
-
+    public:
+    char health;
     int value;
 };
 
 int main(){
 
-    Hero h1;
+    Hero sudarshan;
+    sudarshan.value = 500;
+    sudarshan.health = 'A';
 
-    cout <<"Size of " << sizeof(h1);
+    cout <<" Value is " << sudarshan.value << endl;
+    cout <<" Health is " << sudarshan.health << endl;
+
+
+    // cout <<"Size of " << sizeof(h1);
 
     return 0;
 }
