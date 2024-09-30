@@ -2,19 +2,40 @@
 using namespace std;
 
 class Hero{
-    public:
+    private:
     char health;
-    int value;
+    
+    public:
+    char level;
+
+    void print(){
+        cout << level << endl;
+    }
+
+    int getHealth(){
+        return health;
+    }
+
+    char getLevel(){
+        return level;
+    }
+
+    void setHealth(int h){
+        health = h;
+    }
 };
 
 int main(){
 
-    Hero sudarshan;
-    sudarshan.value = 500;
-    sudarshan.health = 'A';
+    Hero ramesh;
 
-    cout <<" Value is " << sudarshan.value << endl;
-    cout <<" Health is " << sudarshan.health << endl;
+    cout <<"ramesh health is" << ramesh.getHealth() << endl;
+
+    ramesh.setHealth(70);
+    ramesh.level = 'A';
+
+    cout <<" Health is " << ramesh.getHealth() << endl;
+    cout <<" level is " << ramesh.level << endl;
 
 
     // cout <<"Size of " << sizeof(h1);
