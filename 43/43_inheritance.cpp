@@ -1,6 +1,9 @@
 #include<iostream>
 using namespace std;
 
+// this program indicates how the simple inheritance work
+
+
 class Animal{
 
     public:
